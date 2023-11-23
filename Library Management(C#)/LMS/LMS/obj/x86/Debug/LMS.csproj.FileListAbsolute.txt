@@ -1,0 +1,51 @@
+D:\Ritesh\LMS\LMS\LMS\bin\Debug\LMS.exe
+D:\Ritesh\LMS\LMS\LMS\bin\Debug\LMS.pdb
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Form1.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Properties.Resources.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.csproj.GenerateResource.Cache
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.exe
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.pdb
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Main.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Add_Books.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.User_ID.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.View_Books.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.User_info.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Issue.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Purchased_book.resources
+D:\Ritesh\LMS\LMS\LMS\obj\x86\Debug\LMS.Report.resources
+E:\RKMSCC\Projects(CCPA)\Libra\Library Management System\LMS\LMS\obj\x86\Debug\LMS.exe
+E:\RKMSCC\Projects(CCPA)\Libra\Library Management System\LMS\LMS\obj\x86\Debug\LMS.pdb
+D:\Library Management System\LMS\LMS\obj\x86\Debug\LMS.exe
+D:\Library Management System\LMS\LMS\obj\x86\Debug\LMS.pdb
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.exe
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.pdb
+D:\Ritesh\LMS\LMS\bin\Debug\LMS.exe
+D:\Ritesh\LMS\LMS\bin\Debug\LMS.pdb
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Add_Books.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Form1.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Issue.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Main.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Properties.Resources.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Issue_book.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.Report.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.User_ID.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.User_info.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.View_Books.resources
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.csproj.GenerateResource.Cache
+D:\Ritesh\LMS\LMS\obj\x86\Debug\LMS.csprojResolveAssemblyReference.cache
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.exe
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.pdb
+E:\cse projects\C Sharp\LMS\LMS\bin\Debug\LMS.exe
+E:\cse projects\C Sharp\LMS\LMS\bin\Debug\LMS.pdb
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.csprojResolveAssemblyReference.cache
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Add_Books.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Form1.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Issue.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Main.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Properties.Resources.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Issue_book.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.Report.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.User_ID.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.User_info.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.View_Books.resources
+E:\cse projects\C Sharp\LMS\LMS\obj\x86\Debug\LMS.csproj.GenerateResource.Cache

@@ -1,0 +1,11 @@
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\bin\Debug\Student_Information.mdb
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\bin\Debug\Insert_Student_Information.exe.config
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\bin\Debug\Insert_Student_Information.exe
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\bin\Debug\Insert_Student_Information.pdb
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.Form1.resources
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.Properties.Resources.resources
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.csproj.GenerateResource.Cache
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.exe
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.pdb
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.csprojResolveAssemblyReference.cache
+E:\cse projects\Coaching Center\Insert_Student_Information\Insert_Student_Information\obj\x86\Debug\Insert_Student_Information.Insert_Teacher_Informatiom.resources

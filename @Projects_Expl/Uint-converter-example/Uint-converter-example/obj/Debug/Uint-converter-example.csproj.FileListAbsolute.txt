@@ -1,0 +1,16 @@
+E:\project\Uint-converter-example\Uint-converter-example\bin\Debug\Uint-converter-example.exe.config
+E:\project\Uint-converter-example\Uint-converter-example\bin\Debug\Uint-converter-example.exe
+E:\project\Uint-converter-example\Uint-converter-example\bin\Debug\Uint-converter-example.pdb
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Form1.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Properties.Resources.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Temprature.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint-converter-example.csproj.GenerateResource.cache
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint-converter-example.csproj.CoreCompileInputs.cache
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint-converter-example.exe
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint-converter-example.pdb
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Time.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Digital_storage.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Mass.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Speed.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint_converter_example.Pressure.resources
+E:\project\Uint-converter-example\Uint-converter-example\obj\Debug\Uint-converter-example.csprojAssemblyReference.cache

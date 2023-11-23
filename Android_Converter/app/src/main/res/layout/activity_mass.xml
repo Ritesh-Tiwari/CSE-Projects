@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0BBF8"
+    tools:context=".Mass">
+
+    <Button
+        android:id="@+id/convert3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-27dp"
+        android:layout_marginLeft="-27dp"
+        android:layout_marginBottom="66dp"
+        android:text="Convert"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:background="#00B41C1C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#8A2197"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/cance4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-23dp"
+        android:layout_marginLeft="-23dp"
+        android:layout_marginBottom="11dp"
+        android:text="Cencel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TxtMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="25dp"
+        android:text="Mass"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#B10F46"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtMT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#00B41C1C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="-11dp"
+        android:layout_marginRight="-11dp"
+        android:background="#00B41C1C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtmg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00B41C1C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="182dp"
+        android:text="Converted Values"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#CA1F10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="124dp"
+        android:text="KiloGram"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtKG"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:hint="Enter value"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#2E1931"
+        android:textSize="18sp" />
+</RelativeLayout>

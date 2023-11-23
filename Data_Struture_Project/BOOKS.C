@@ -1,0 +1,655 @@
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<dos.h>
+#include<string.h>
+
+typedef struct book
+{
+int book_id;
+char book_name	[100];
+char author_name[100];
+char publication[100];
+char edition 	[100];
+char date_issue	[100];
+int isbn_no;
+struct book *next;
+}b;
+b *start;
+void create			(b *);
+void display		(b *);
+b *insert_1st();//b *insert_1st		();
+void insert_middle	();
+void insert_last	();
+b *delete_1st		();
+void delete_middle	();
+void delete_last	();
+void modify			();
+void search_book_id	();
+void search_book_name();
+void display1(b *);
+void main()
+{
+int a;
+clrscr();
+start=(b *)malloc(sizeof(b));
+do{
+	clrscr();
+	textcolor(RED);
+	printf("\n\t\t");
+	cprintf("+-----%-----------------------------------%------+");
+	printf("\n\t\t");
+	cprintf("#     XXXXX  BOOKS MANAGEMENT SYSTEM  XXXXX      #  ");
+	printf("\n\t\t");
+	cprintf("+-----%-----------------------------------%------+");
+	textcolor(BLUE);
+	printf("\n\t\t");
+	cprintf("|                                                |");
+	printf("\n\t\t");
+	cprintf("|          Create Records              [1]       |");
+	printf("\n\t\t");
+	cprintf("|          Display Records             [2]       |");
+	printf("\n\t\t");
+	cprintf("|          Modify Records              [3]       |");
+	printf("\n\t\t");
+	cprintf("|          Insert Records              [4]       |");
+	printf("\n\t\t");
+	cprintf("|          Search Records              [5]       |");
+	printf("\n\t\t");
+	cprintf("|          Delete Records              [6]       |");
+	printf("\n\t\t");
+	cprintf("|          Exit                        [7]       |");
+	printf("\n\t\t");
+	cprintf("|                                                |");
+	printf("\n\t\t");
+	cprintf("+------------------------------------------------+");
+	printf("\n\n\t\t");
+	cprintf("           Enter your choice          :");
+	cscanf("%d",&a);
+	clrscr();
+	switch(a)
+	{
+	case 1:
+			create(start);
+		   break;
+	case 2:
+		   display(start);
+			break;
+	case 3:
+		 //	modify();
+			break;
+	case 4:
+			clrscr();
+			textcolor(RED);
+			printf("\n\t\t");
+			cprintf("+------%-----------------------------------%----+");
+			printf("\n\t\t");
+			cprintf("#          XXXXX   INSERT MENU   XXXXX          #");
+			printf("\n\t\t");
+			cprintf("+------%-----------------------------------%----+");
+			textcolor(BLUE);
+			printf("\n\t\t");
+			cprintf("|                                               |");
+			printf("\n\t\t");
+			cprintf("|      $   Insert in First Position       [1]   |");
+			printf("\n\t\t");
+			cprintf("|      $   Insert in Middle Position      [2]   |");
+			printf("\n\t\t");
+			cprintf("|      $   Insert in Last Position        [3]   |");
+			printf("\n\t\t");
+			cprintf("|      $   Go Back                        [4]   |");
+			printf("\n\t\t");
+			cprintf("|                                               |");
+			printf("\n\t\t");
+
+			cprintf("+------%-----------------------------------%---+");
+
+
+			printf("\n\n\t\t       $    Enter your choice            :");
+			scanf("%d",&a);
+			switch(a)
+			{
+			case 1:
+				clrscr();
+				start=insert_1st();
+					break;
+			case 2:
+					clrscr();
+					insert_middle();
+					break;
+			case 3:
+					clrscr();
+				   insert_last();
+					break;
+			case 4:
+					clrscr();
+					break;
+			default:
+					printf("\nYou pressed the wrong option, please try again!\n");
+			}
+			break;
+	case 5:
+			clrscr();
+			textcolor(RED);
+			printf("\n\t\t");
+			cprintf("+------%-----------------------------------%---+");
+			printf("\n\t\t");
+			cprintf(" #         XXXXX   SEARCH MENU   XXXXX         #");
+			printf("\n\t\t");
+			cprintf("+------%-----------------------------------%---+");
+			textcolor(BLUE);
+			printf("\n\t\t");
+			cprintf("|                                              |");
+			printf("\n\t\t");
+			cprintf("|      $   Search By Book ID       [1]     $   |");
+			printf("\n\t\t");
+			cprintf("|      $   Search by Book Name     [2]     $   |");
+			printf("\n\t\t");
+			cprintf("|      $   Go back                 [3]     $   |");
+			printf("\n\t\t");
+			cprintf("|                                              |");
+			printf("\n\t\t");
+			cprintf("+------%-----------------------------------%---+");
+
+			printf("\n\t\t      $   Enter your choice       :");
+			scanf("%d",&a);
+			switch(a)
+			{
+			case 1:
+				clrscr();
+				search_book_id();
+				break;
+			case 2:
+					clrscr();
+					search_book_name();
+				break;
+
+			case 3:
+					clrscr();
+					break;
+			default:
+					printf("\nYou pressed the wrong option, please try again!\n");
+
+			}
+
+			break;
+	case 6:
+			clrscr();
+			textcolor(RED);
+			printf("\n\t\t");
+			cprintf("+-------%-------------------------------------------%----+");
+			printf("\n\t\t");
+			cprintf("#             XXXXX   DELETE MENU   XXXXX                #");
+			printf("\n\t\t");
+			cprintf("+-------%-------------------------------------------%----+");
+			textcolor(BLUE);
+			printf("\n\t\t");
+			cprintf("|                                                        |");
+			printf("\n\t\t");
+			cprintf("|       $     Delete from First Position   [1]      $    |");
+			printf("\n\t\t");
+			cprintf("|       $     Delete from Middle Position  [2]      $    |");
+			printf("\n\t\t");
+			cprintf("|       $     Delete from Last Position    [3]      $    |");
+			printf("\n\t\t");
+			cprintf("|       $     Go Back                      [4]      $    |");
+			printf("\n\t\t");
+			cprintf("|                                                        |");
+			printf("\n\t\t");
+			cprintf("+-------%-------------------------------------------%----+");
+
+			printf("\n\n\t\t       $      Enter your choice             :");
+			scanf("%d",&a);
+			switch(a)
+			{
+			case 1:
+					clrscr();
+				   start=delete_1st();
+					break;
+			case 2:
+					clrscr();
+					delete_middle();
+					break;
+			case 3:
+					clrscr();
+					delete_last();
+					break;
+			case 4:
+					clrscr();
+					break;
+			default:
+					printf("\nYou pressed the wrong option, please try again!\n");
+
+			}
+			break;
+	case 7:
+			exit(0);
+	default:
+			printf("\nYou pressed the wrong option, please try again!\n");
+
+	}
+  }while(1);
+}
+void create(b *node)
+	{
+	char ans='y';
+	//clrscr();
+
+
+	while(1)
+		{
+		clrscr();
+		textcolor(YELLOW);
+		printf("\n\n\n\t\t");
+		cprintf("$        XXXXX  CREATE BOOKS RECORDS  XXXXX     $");
+		printf("\n\n\n\t\t");
+		textcolor(WHITE);
+		node->next=(b *)malloc(sizeof(b));  //create a new node if user press yes
+		cprintf("         *       Book ID      :");
+		scanf("%d",&node->book_id);
+		printf("\n\t\t");
+		cprintf("         *       Book Name    :");
+		fflush(stdin);
+		gets(node->book_name);
+		printf("\n\t\t");
+		cprintf("         *       Author Name  :");
+		fflush(stdin);
+		gets(node->author_name);
+		printf("\n\t\t");
+		cprintf("         *       Publication  :");
+	   fflush(stdin);
+	   gets(node->publication);
+		printf("\n\t\t");
+		cprintf("         *       Edition      :");
+		fflush(stdin);
+	   gets(node->edition);
+		printf("\n\t\t");
+		cprintf("         *       Date Issue   :");
+		fflush(stdin);
+		gets(node->date_issue);
+		printf("\n\t\t");
+		cprintf("         *       ISBN NO      :");
+		scanf("%d",&node->isbn_no);
+		printf("\n\t\t");
+		textcolor(YELLOW);
+		cprintf("$                                               $");
+		printf("\n\n\t\t");
+		cprintf(" Do you want to continue [Y/N]:");
+		fflush(stdin);
+		ans=getchar();
+			if(ans=='y' || ans=='Y')
+			{
+			node=node->next;  //it help to create next node
+			}
+		else
+			{
+			node->next='\0';     //   value store 0
+			break;
+			}
+
+		}
+
+}
+
+void display(b *node)
+	{
+	int no=0;
+	char n;
+		printf("\n\t\t\t*****BOOK RECORDS*****\n\n\t");
+		textcolor(RED);
+		cprintf("|Book ID    Book Name    Author Name   Publication   Issue Date |\n");
+
+		while(node)   // check information stored or not
+		{
+		textcolor(WHITE);
+		printf("\n\t");
+		cprintf("|  %d        %s           %s            %s           %s        |",node->book_id,node->book_name,node->author_name,node->publication,node->date_issue);
+
+	   /*	printf("\n_______________________________________\n");
+		printf("\nRecord No \t:%d",no+1);
+		printf("\tBook ID \t:%d",node->book_id);
+		printf("\tBook Name \t:%s\n",node->book_name);
+		printf("Author Name\t:%s",node->author_name);
+		printf("\tPublication \t:%s",node->publication);
+		printf("\tEdition\t\t:%s\n",node->edition);
+		printf("Issue Date \t:%s",node->date_issue);
+		printf("\tISBN No\t\t:%d",node->isbn_no);
+		printf("\n__________________________________________\n");
+	   */	node=node->next;  //go to next link list
+		no++;     //increasing the pocket address
+		}
+		printf("\n\n\n\t\t\t");
+		cprintf("Do you want to see the details [Y/N] :");
+		fflush(stdin);
+		n=getchar();
+		if(n=='y'||n=='Y')
+		{
+			printf("\n\t\t\t");
+			search_book_id();
+			return;
+		}
+		textcolor(RED+BLINK);
+		printf("\n");
+		cprintf("Press Enter!");
+		getch();
+	}
+void search_book_id()
+	{
+	b *node,*temp;
+	int nod;
+	node=start;
+	temp=start;
+	printf("\n Enter Book ID to search:");
+	scanf("%d",&nod);
+	while(node)
+		{
+		if(temp->book_id==nod)
+			{
+			printf("record found");
+			printf("\n_______________________________________________________________________\n");
+			printf("\tBook ID \t:%d",node->book_id);
+		printf("\tBook Name \t:%s\n",node->book_name);
+		printf("Author Name\t:%s",node->author_name);
+		printf("\tPublication \t:%s",node->publication);
+		printf("\tEdition\t\t:%s\n",node->edition);
+		printf("\Issue Date \t:%s",node->date_issue);
+		printf("\tISBN No\t\t:%d",node->isbn_no);
+		printf("\n___________________________________________________________________________\n");
+		getch();
+		break;
+			}
+		else
+		{
+			printf("Record Not found");
+			break;
+		}
+		node=node->next;
+		}
+		textcolor(RED+BLINK);
+		printf("\n");
+		cprintf("Press Enter!");
+		getch();
+	}
+void search_book_name()
+	{
+	b *node;
+	char name[100];
+	node=start;
+	printf("\n Enter Book Name to search:");
+	fflush(stdin);
+	gets(name);
+	while(node)
+		{
+		if(strcmp(node->book_name,name)==0)
+			{
+		   //	printf("record found");
+			printf("record found");
+			printf("\n_______________________________________________________________________\n");
+			printf("\tBook ID \t:%d",node->book_id);
+		printf("\tBook Name \t:%s\n",node->book_name);
+		printf("Author Name\t:%s",node->author_name);
+		printf("\tPublication \t:%s",node->publication);
+		printf("\tEdition\t\t:%s\n",node->edition);
+		printf("\Issue Date \t:%s",node->date_issue);
+		printf("\tISBN No\t\t:%d",node->isbn_no);
+		printf("\n___________________________________________________________________________\n");
+		getch();
+		break;
+			}
+		else
+		{
+			printf("Record Not found");
+			break;
+		}
+		node=node->next;
+
+		}
+		textcolor(RED+BLINK);
+		printf("\n");
+		cprintf("Press Enter!");
+		getch();
+	}
+
+b *insert_1st()//b *insert_1st()
+{
+b *node,*new1;
+node=start;
+new1=(b *)malloc(sizeof(b));
+new1->next=node;
+		textcolor(YELLOW);
+		printf("\n\n\n\t\t");
+		cprintf("$        XXXXX  INSERT BOOKS RECORDS  XXXXX     $");
+		printf("\n\n\n\t\t");
+		textcolor(WHITE);
+		cprintf("         *       Book ID      :");
+		cscanf("%d",&new1->book_id);
+		printf("\n\t\t");
+		cprintf("         *       Book Name    :");
+		fflush(stdin);
+		cscanf("%s",new1->book_name);
+	   //	gets(node->book_name);
+		printf("\n\t\t");
+		cprintf("         *       Author Name  :");
+		fflush(stdin);
+	   cscanf("%s",new1->author_name);
+	   //	gets(node->author_name);
+		printf("\n\t\t");
+		cprintf("         *       Publication  :");
+	   fflush(stdin);
+		cscanf("%s",new1->publication);
+		//gets(node->publication);
+		printf("\n\t\t");
+		cprintf("         *       Edition      :");
+		fflush(stdin);
+		cscanf("%s",new1->edition);
+		//gets(node->edition);
+		printf("\n\t\t");
+		cprintf("         *       Date Issue   :");
+		fflush(stdin);
+		 cscanf("%s",new1->date_issue);
+	   //	gets(node->date_issue);
+		printf("\n\t\t");
+		cprintf("         *       ISBN NO      :");
+		cscanf("%d",&new1->isbn_no);
+		printf("\n\t\t");
+		textcolor(YELLOW);
+		cprintf("$        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     $");
+
+start=new1;
+return start;
+}
+void insert_middle()
+{
+ b *prev,*node,*new1;
+ int no=0,p=0;
+ prev=start;
+ node=start->next;
+ printf("Enter no. of position to insert :");
+ scanf("%d",&p);
+ while(node)
+	{
+	no++;
+	if(no==p)
+		{
+		  new1=(b *)malloc(sizeof(b));
+		textcolor(YELLOW);
+		printf("\n\n\n\t\t");
+		cprintf("$        XXXXX  INSERT BOOKS RECORDS  XXXXX     $");
+		printf("\n\n\n\t\t");
+		textcolor(WHITE);
+		cprintf("         *       Book ID      :");
+		cscanf("%d",&new1->book_id);
+		printf("\n\t\t");
+		cprintf("         *       Book Name    :");
+		fflush(stdin);
+		cscanf("%s",new1->book_name);
+	   //	gets(node->book_name);
+		printf("\n\t\t");
+		cprintf("         *       Author Name  :");
+		fflush(stdin);
+	   cscanf("%s",new1->author_name);
+	   //	gets(node->author_name);
+		printf("\n\t\t");
+		cprintf("         *       Publication  :");
+	   fflush(stdin);
+		cscanf("%s",new1->publication);
+		//gets(node->publication);
+		printf("\n\t\t");
+		cprintf("         *       Edition      :");
+		fflush(stdin);
+		cscanf("%s",new1->edition);
+		//gets(node->edition);
+		printf("\n\t\t");
+		cprintf("         *       Date Issue   :");
+		fflush(stdin);
+		 cscanf("%s",new1->date_issue);
+	   //	gets(node->date_issue);
+		printf("\n\t\t");
+		cprintf("         *       ISBN NO      :");
+		cscanf("%d",&new1->isbn_no);
+		printf("\n\t\t");
+		textcolor(YELLOW);
+		cprintf("$        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     $");
+		new1->next=node;
+		  prev->next=new1;
+		  break;
+		}
+	else
+			{
+			prev=prev->next;
+			node=node->next;
+			}
+	}
+}
+void insert_last()
+{
+b *node,*new1,*prev;
+prev=start;
+node=start->next;
+while(node)
+	{
+	node=node->next;
+	prev=prev->next;
+	}
+if(node==NULL)
+	{
+	new1=(b *)malloc(sizeof(b));
+	new1->next=node;
+	prev->next=new1;
+		textcolor(YELLOW);
+		printf("\n\n\n\t\t");
+		cprintf("$        XXXXX  INSERT BOOKS RECORDS  XXXXX     $");
+		printf("\n\n\n\t\t");
+		textcolor(WHITE);
+		cprintf("         *       Book ID      :");
+		cscanf("%d",&new1->book_id);
+		printf("\n\t\t");
+		cprintf("         *       Book Name    :");
+		fflush(stdin);
+		cscanf("%s",new1->book_name);
+	   //	gets(node->book_name);
+		printf("\n\t\t");
+		cprintf("         *       Author Name  :");
+		fflush(stdin);
+	   cscanf("%s",new1->author_name);
+	   //	gets(node->author_name);
+		printf("\n\t\t");
+		cprintf("         *       Publication  :");
+	   fflush(stdin);
+		cscanf("%s",new1->publication);
+		//gets(node->publication);
+		printf("\n\t\t");
+		cprintf("         *       Edition      :");
+		fflush(stdin);
+		cscanf("%s",new1->edition);
+		//gets(node->edition);
+		printf("\n\t\t");
+		cprintf("         *       Date Issue   :");
+		fflush(stdin);
+		 cscanf("%s",new1->date_issue);
+	   //	gets(node->date_issue);
+		printf("\n\t\t");
+		cprintf("         *       ISBN NO      :");
+		cscanf("%d",&new1->isbn_no);
+		printf("\n\t\t");
+		textcolor(YELLOW);
+		cprintf("$        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     $");
+
+	}
+}
+b *delete_1st()
+{
+   b *node;
+   clrscr();
+   node=start;
+   start=node->next;
+   free(node);
+	textcolor(YELLOW);
+	printf("\t");
+	cprintf(" first record was deleted ...");
+  display(start);
+
+   getch();
+   return start;
+}
+void delete_last()
+{
+b *prev, *node;
+clrscr();
+node=start;
+prev=start;
+while(node)
+	{
+	if(node->next==NULL)
+		{
+		prev->next=node->next;
+		free(node);
+		break;
+		}
+
+	else
+	{
+	prev=node;
+	node=node->next;
+	}
+	}   textcolor(YELLOW);
+		printf("\t");
+		cprintf(" Last record was deleted ...");
+
+	display(start);
+
+	getch();
+
+
+}
+void delete_middle()
+{
+b *prev ,*node;
+int no=1,nod=0;//=node->book_id;
+clrscr();
+prev=start;
+node=start->next;
+printf("Enter book id to delete:");
+scanf("%d",&nod);
+while(node)
+	{
+	if(node->book_id==nod)
+		{
+		prev->next=node->next;
+		free(node);
+		break;
+
+		}
+	prev=prev->next;
+	node=node->next;
+	no++;
+
+	}
+	 textcolor(YELLOW);
+	 printf("\t");
+	 cprintf("\t %d was deleted",nod);
+display(start);
+
+
+getch();
+}

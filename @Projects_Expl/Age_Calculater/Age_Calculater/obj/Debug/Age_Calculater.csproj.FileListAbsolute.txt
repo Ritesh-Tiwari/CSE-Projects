@@ -1,0 +1,11 @@
+E:\project\Age_Calculater\Age_Calculater\bin\Debug\Age_Calculater.exe.config
+E:\project\Age_Calculater\Age_Calculater\bin\Debug\Age_Calculater.exe
+E:\project\Age_Calculater\Age_Calculater\bin\Debug\Age_Calculater.pdb
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.Form1.resources
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.Properties.Resources.resources
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.csproj.GenerateResource.cache
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.csproj.CoreCompileInputs.cache
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.exe
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.pdb
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.Calculated_Age.resources
+E:\project\Age_Calculater\Age_Calculater\obj\Debug\Age_Calculater.csprojAssemblyReference.cache
